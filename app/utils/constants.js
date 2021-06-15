@@ -5,3 +5,7 @@ export const environmentVariables = {
     reposScort: 'created:asc'
 
 }
+
+export const DOMStrings = {
+    profile: document.getElementById( 'profile' )
+}

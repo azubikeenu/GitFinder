@@ -8,7 +8,10 @@ export default class UIComponent {
         return this.input.value;
     }
     showProfile ( func ) {
-        this.profile.addEventListener( 'keyup', debounce( func ) )
+        this.input.addEventListener( 'keyup', debounce( func ) )
+    }
+    clearProfile () {
+        this.profile.innerHTML = "";
     }
 
 }
