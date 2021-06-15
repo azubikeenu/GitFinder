@@ -2,7 +2,6 @@ import { isValid } from "./utils/isvalid.js";
 import Alert from "./services/alert.service.js";
 import * as gitView from './views/gitView.js'
 export const run = ( git, component ) => {
-
     component.showProfile( () => {
         const user = component.getUserInput();
         if ( !isValid.isEmpty( user ) ) {

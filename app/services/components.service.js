@@ -1,7 +1,7 @@
 import { debounce } from "../utils/debounce.js";
+import { DOMStrings } from "../utils/constants.js";
 export default class UIComponent {
     constructor() {
-        this.profile = document.getElementById( 'profile' );
         this.input = document.getElementById( 'searchUser' );
     }
     getUserInput () {
@@ -11,7 +11,6 @@ export default class UIComponent {
         this.input.addEventListener( 'keyup', debounce( func ) )
     }
     clearProfile () {
-        this.profile.innerHTML = "";
+        DOMStrings.profile.innerHTML = "";
     }
-
 }

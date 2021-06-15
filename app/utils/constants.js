@@ -7,5 +7,7 @@ export const environmentVariables = {
 }
 
 export const DOMStrings = {
-    profile: document.getElementById( 'profile' )
+    profile: document.getElementById( 'profile' ),
+    container: document.querySelector( '.searchContainer' ),
+    search: document.querySelector( '.search' )
 }
